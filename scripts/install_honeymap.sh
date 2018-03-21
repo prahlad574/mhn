@@ -123,7 +123,8 @@ cat > /opt/hpfeeds/geoloc.json <<EOF
         "shockpot.events",
         "p0f.events",
         "suricata.events",
-        "elastichoney.events"
+        "elastichoney.events",
+        "honeything.events"
     ],
     "GEOLOC_CHAN": "geoloc.events"
 }
