@@ -137,6 +137,7 @@ def create_clean_db():
         #|-- deploy_snort.sh
         #|-- deploy_kippo.sh
         deployscripts = [
+            ['Ubuntu - honeything', '../scripts/deploy_honeything.sh'], 
             ['Ubuntu - Conpot', '../scripts/deploy_conpot.sh'],
             ['Ubuntu - Wordpot', '../scripts/deploy_wordpot.sh'],
             ['Ubuntu - Shockpot', '../scripts/deploy_shockpot.sh'],
