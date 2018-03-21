@@ -17,7 +17,7 @@ pip install virtualenv
 
 # Get the honeything source
 cd /opt
-git clone https://github.com/prahlad574/honeything-1.git
+git clone https://github.com/prahlad574/honeything.git
 cd honeything
 
 virtualenv env
