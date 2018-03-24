@@ -32,7 +32,7 @@ chmod 755 registration.sh
 # Note: this will export the HPF_* variables
 . ./registration.sh $server_url $deploy_key "honeything"
 
-cat >> wordpot.conf <<EOF
+cat >> honeything.conf <<EOF
 HPFEEDS_ENABLED = True
 HPFEEDS_HOST = '$HPF_HOST'
 HPFEEDS_PORT = $HPF_PORT
@@ -42,9 +42,9 @@ HPFEEDS_TOPIC = 'honeything.events'
 EOF
 
 # Config for supervisor.
-cat > /etc/supervisor/conf.d/src/config/honeything.config.ini <<EOF
+cat > /etc/supervisor/conf.d/honeything.conf <<EOF
 [program:honeything]
-command=/opt/honeything/env/bin/python /opt/wordpot/setup.py 
+command=/opt/honeything/env/bin/python /opt/honeything/setup.py 
 directory=/opt/honeything
 stdout_logfile=/opt/honeything/honeything.out
 stderr_logfile=/opt/honeything/honeything.err
