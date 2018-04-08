@@ -44,7 +44,7 @@ EOF
 # Config for supervisor.
 cat > /etc/supervisor/conf.d/honeything.conf <<EOF
 [program:honeything]
-command=/opt/honeything/env/bin/python /opt/honeything/setup.py 
+command=/opt/honeything/env/bin/python  
 directory=/opt/honeything
 stdout_logfile=/opt/honeything/honeything.out
 stderr_logfile=/opt/honeything/honeything.err
